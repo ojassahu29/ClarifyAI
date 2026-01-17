@@ -123,7 +123,7 @@ copy "path\to\hr_handbook.pdf" data\policies\
 ### 4. Run the Application
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 The app will open in your browser at `http://localhost:8501`.

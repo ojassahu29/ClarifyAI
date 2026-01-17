@@ -8,7 +8,7 @@ Wraps the vector store with additional filtering and ranking logic.
 from pathlib import Path
 from typing import List, Optional, Tuple
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 import sys
 sys.path.append(str(Path(__file__).parent.parent))

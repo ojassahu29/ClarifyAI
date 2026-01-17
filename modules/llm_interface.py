@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Optional, List
 
 from langchain_groq import ChatGroq
-from langchain.schema import HumanMessage, SystemMessage, AIMessage
+from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 
 import sys
 sys.path.append(str(Path(__file__).parent.parent))

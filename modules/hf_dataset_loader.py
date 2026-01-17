@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import List, Optional, Dict, Any
 import json
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 try:
     from datasets import load_dataset

@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 import re
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 import sys
 sys.path.append(str(Path(__file__).parent.parent))
@@ -268,7 +268,7 @@ if __name__ == "__main__":
     print("Uncertainties found:", uncertainties)
     
     # Test with mock documents
-    from langchain.schema import Document
+    from langchain_core.documents import Document
     
     docs = [
         Document(

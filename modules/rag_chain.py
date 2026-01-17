@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Optional, List, Dict, Any
 from dataclasses import dataclass
 
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 import sys
 sys.path.append(str(Path(__file__).parent.parent))
