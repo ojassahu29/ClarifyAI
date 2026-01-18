@@ -155,17 +155,23 @@ class RAGChain:
         
         # Step 4: Optional conflict detection
         conflict_analysis = None
-        confidence = 0.8  # Default confidence
+        confidence = 0.8
         
         if self.check_conflicts and len(documents) > 1:
             conflict_analysis = self.llm.analyze_conflicts(context, answer)
             
+            # Always use confidence from conflict analysis when available
+            confidence = conflict_analysis.get("confidence", 0.8)
+            
             if conflict_analysis.get("has_conflict"):
-                confidence = conflict_analysis.get("confidence", 0.5)
                 # Add conflict warning to answer
                 issues = conflict_analysis.get("issues", [])
                 if issues:
                     answer += "\n\n⚠️ **Note:** " + "; ".join(issues)
+        else:
+            # Single document or conflict checking disabled - high confidence
+            # since there's no possibility of conflicting information
+            confidence = 0.9
         
         return RAGResponse(
             answer=answer,
