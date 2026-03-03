@@ -1,4 +1,4 @@
-# 📋 RAG Policy Assistant
+# 📋 RAG Company Policy Assistant
 
 A modular Retrieval-Augmented Generation (RAG) system for answering policy-related questions using LangChain with xAI's Grok model.
 
@@ -274,3 +274,4 @@ This project is for educational and internal use. Ensure compliance with your or
 ---
 
 **Built with ❤️ using LangChain, Grok, and Streamlit**
+
