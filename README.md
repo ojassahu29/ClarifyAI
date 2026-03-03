@@ -53,7 +53,7 @@ A modular Retrieval-Augmented Generation (RAG) system for answering policy-relat
 ## 📁 Project Structure
 
 ```
-AhaanKiTooli/
+ClarifyAI/
 ├── app.py                    # Streamlit UI entry point
 ├── config.py                 # Configuration and settings
 ├── requirements.txt          # Python dependencies
@@ -86,7 +86,7 @@ AhaanKiTooli/
 
 ```bash
 # Clone or navigate to the project
-cd AhaanKiTooli
+cd ClarifyAI
 
 # Create virtual environment
 python -m venv venv

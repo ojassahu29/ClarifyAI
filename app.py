@@ -29,7 +29,7 @@ from modules import (
 # =============================================================================
 
 st.set_page_config(
-    page_title="Policy Assistant",
+    page_title="ClarifyAI",
     page_icon="📋",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -131,7 +131,7 @@ def initialize_rag():
 
 def render_sidebar():
     """Render the sidebar with controls and info."""
-    st.sidebar.markdown("## 📋 Policy Assistant")
+    st.sidebar.markdown("## 📋 ClarifyAI")
     st.sidebar.markdown("---")
     
     # Status section
@@ -328,7 +328,7 @@ def main():
         initialize_rag()
     
     # Header
-    st.markdown('<p class="main-header">📋 Policy Assistant</p>', unsafe_allow_html=True)
+    st.markdown('<p class="main-header">📋 ClarifyAI</p>', unsafe_allow_html=True)
     st.markdown(
         '<p class="sub-header">Ask questions about company policies and procedures</p>',
         unsafe_allow_html=True
